@@ -18,7 +18,7 @@ Train the following classifiers on the dataset:
 - SVM using linear, polynomial of degree 2, and RBF kernels;
 - Random forests;
 - Naive Bayes classifier where each pixel is distributed according to a Beta distribution of parameters $\alpha, \beta$:
-$ d(x; \alpha, \beta) = \frac{\Gamma(\alpha + \beta)}{\Gamma(\alpha)\Gamma(\beta)} \alpha^{\alpha - 1} (1 - x)^{\beta - 1}$
+  $d(x; \alpha, \beta) = \frac{\Gamma(\alpha + \beta)}{\Gamma(\alpha)\Gamma(\beta)} \alpha^{\alpha - 1} (1 - x)^{\beta - 1}$
 - k-NN.
 
 You can use scikit-learn or any other library for SVM and random forests, but you must implement the Naive Bayes and k-NN classifiers yourself.
@@ -34,4 +34,5 @@ For a discussion about maximum likelihood for the parameters of a beta distribut
 $\alpha = \mathbb{E}[X], \quad \beta = K(1 - \mathbb{E}[X])$
 with
 $K = \frac{\mathbb{E}[X](1 - \mathbb{E}[X])}{\text{Var}(X)} - 1$
+
 Note: $\alpha/(\alpha + \beta)$ is the mean of the beta distribution. If you compute the mean for each of the 784 models and reshape them into 28x28 images you can have a visual indication of what the model is learning.
