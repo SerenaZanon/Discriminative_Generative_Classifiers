@@ -36,3 +36,5 @@ with
 $K = \frac{\mathbb{E}[X](1 - \mathbb{E}[X])}{\text{Var}(X)} - 1$
 
 Note: $\alpha/(\alpha + \beta)$ is the mean of the beta distribution. If you compute the mean for each of the 784 models and reshape them into 28x28 images you can have a visual indication of what the model is learning.
+
+For space issues, the csv file are omitted in the repository.
